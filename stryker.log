@@ -1,0 +1,256 @@
+21:40:44 (49444) INFO ConfigReader Using stryker.conf.json
+21:40:44 (49444) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+21:40:44 (49444) DEBUG ConfigReader Loading config /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker.conf.json
+21:40:44 (49444) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/components/About.js",
+    "src/App.js",
+    "src/components/FavoritePokemons.js",
+    "src/components/NotFound.js",
+    "src/components/Pokedex.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker.conf.json"
+}
+21:40:44 (49444) DEBUG PluginLoader Loading @stryker-mutator/* from /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator
+21:40:44 (49444) DEBUG PluginLoader Loading plugin "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+21:40:44 (49444) DEBUG PluginLoader Loading plugin "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+21:40:44 (49444) DEBUG PluginLoader Loading plugins /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+21:40:44 (49444) DEBUG PluginLoader Loading plugins /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+21:40:44 (49444) DEBUG PluginLoader Loading plugins /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+21:40:44 (49444) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+21:40:44 (49444) INFO InputFileResolver Found 7 of 65 file(s) to be mutated.
+21:40:44 (49444) DEBUG InputFileResolver All input files: [
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker.log",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.babelrc.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.eslintignore",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.eslintrc.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.github/CODEOWNERS",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.github/workflows/main.yml",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.gitignore",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.npmrc",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stylelintignore",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stylelintrc.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.trybe/requirements.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/README.md",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/package-lock.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/package.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/favicon.ico",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/index.html",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/logo192.png",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/logo512.png",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/manifest.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/robots.txt",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/public/star-icon.svg",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/App.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/App.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/About.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/Button.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/NotFound.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/Pokedex.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/Pokemon.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/PokemonDetails.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/about.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/button.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/favorite-pokemons.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/index.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/not-found.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/pokedex.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/pokemon-details.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/pokemon.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/data.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/index.css",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/index.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/logo.svg",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/serviceWorker.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/services/pokedexService.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/setupTests.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/About.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/App.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/tests/renderWithRouter.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/types/index.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/About.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/App.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/testefalhando.png",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/testepassando.png",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/trybe.yml"
+]
+21:40:44 (49444) DEBUG InputFileResolver Files to mutate: [
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/App.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/About.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/NotFound.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/Pokedex.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/Pokemon.js",
+  "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/src/components/PokemonDetails.js"
+]
+21:40:44 (49444) DEBUG TemporaryDirectory Using temp directory "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp"
+21:40:44 (49444) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+21:40:44 (49444) INFO InitialTestExecutor Starting initial test run. This may take a while.
+21:40:44 (49444) DEBUG Sandbox Creating a sandbox for files in /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox5144533
+21:40:44 (49444) DEBUG Sandbox Creating test runner 0
+21:40:44 (49444) DEBUG ChildProcessProxy Starting /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 49457
+21:40:44 (49457) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox5144533
+21:40:44 (49457) DEBUG PluginLoader Loading @stryker-mutator/* from /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator
+21:40:44 (49457) DEBUG PluginLoader Loading plugin "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+21:40:44 (49457) DEBUG PluginLoader Loading plugin "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+21:40:44 (49457) DEBUG PluginLoader Loading plugins /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+21:40:45 (49457) DEBUG PluginLoader Loading plugins /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+21:40:45 (49457) DEBUG PluginLoader Loading plugins /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+21:40:45 (49457) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox5144533"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+21:40:45 (49457) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+21:40:45 (49457) DEBUG JestTestRunner Project root is /home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox5144533
+21:40:45 (49444) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+21:40:45 (49457) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox5144533","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+21:40:48 (49444) DEBUG ChildProcessProxy Disposing of worker process 49457
+21:40:48 (49444) DEBUG ChildProcessProxy Kill 49457
+21:40:48 (49444) ERROR InitialTestExecutor One or more tests failed in the initial test run:
+	Teste o componente <Pokemon.js /> Teste se é renderizado o card com as informações de determinado pokémon.
+		Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "Pikachu"
+Received string:    "https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"
+    at Object.<anonymous> (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox5144533/src/tests/Pokemon.test.js:40:33)
+    at Promise.then.completed (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+21:40:48 (49444) ERROR StrykerCli an error occurred Error: There were failed tests in the initial test run.
+    at InitialTestExecutor.validateResult (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:69:27)
+    at InitialTestExecutor.run (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at async Stryker.runMutationTest (/home/artbarros/Front End - Trybe/lecture/projetos/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
